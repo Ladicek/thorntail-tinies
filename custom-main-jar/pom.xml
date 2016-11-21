@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cz.ladicek.swarm.tiny</groupId>
-    <artifactId>custom-main</artifactId>
+    <artifactId>custom-main-jar</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -46,7 +46,7 @@
                 <artifactId>wildfly-swarm-plugin</artifactId>
                 <version>${version.org.wildfly.swarm}</version>
                 <configuration>
-                    <mainClass>cz.ladicek.swarm.tiny.customMain.Main</mainClass>
+                    <mainClass>cz.ladicek.swarm.tiny.customMainJar.Main</mainClass>
                 </configuration>
                 <executions>
                     <execution>

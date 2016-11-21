@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.customMain;
+package cz.ladicek.swarm.tiny.customMainJar;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +11,6 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("Hello from servlet with custom main");
+        resp.getWriter().println("Hello from servlet with custom main in JAR");
     }
 }
