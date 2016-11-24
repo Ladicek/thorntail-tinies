@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.fractionAutodetection;
+package cz.ladicek.swarm.tiny.fractionAutodetectionCdiJaxrsEjb;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;

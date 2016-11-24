@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.fractionAutodetection;
+package cz.ladicek.swarm.tiny.fractionAutodetectionCdiJaxrsEjb;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
