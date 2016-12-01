@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.additionalFractions;
+package cz.ladicek.swarm.tiny.additionalFractionsWithoutAutodetection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +11,6 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("Hello from servlet with additional fractions");
+        resp.getWriter().println("Hello from servlet with additional fractions without autodetection");
     }
 }
