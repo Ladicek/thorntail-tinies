@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.testing;
+package cz.ladicek.swarm.tiny.testingFailsafe;
 
 import java.io.IOException;
 
@@ -11,6 +11,6 @@ public class HelloServletIT {
     @Test
     public void test() throws IOException {
         String response = Request.Get("http://localhost:8080/").execute().returnContent().asString();
-        assertEquals("Hello from testing servlet\n", response);
+        assertEquals("Hello from testing servlet with Failsafe\n", response);
     }
 }
