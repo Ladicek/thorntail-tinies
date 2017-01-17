@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.jaxrs;
+package cz.ladicek.swarm.tiny.javaeeJaxrs;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

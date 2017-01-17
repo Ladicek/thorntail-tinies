@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.servlet;
+package cz.ladicek.swarm.tiny.javaeeServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

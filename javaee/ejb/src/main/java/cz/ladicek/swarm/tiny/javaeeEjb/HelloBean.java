@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.ejb;
+package cz.ladicek.swarm.tiny.javaeeEjb;
 
 import javax.ejb.Stateless;
 
