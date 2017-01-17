@@ -1,4 +1,4 @@
-package cz.ladicek.swarm.tiny.javaeeCdiServlet;
+package cz.ladicek.swarm.tiny.javaeeCdi;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
