@@ -45,18 +45,30 @@
       -->
 
     <dependencies>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>msc</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>management</artifactId></dependency>
 
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>batch-jberet</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>bean-validation</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>cdi</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>connector</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>datasources</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>ee</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>ejb</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>ejb-remote</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>hibernate-search</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>hibernate-validator</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>infinispan</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>io</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-jaxb</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-jsonp</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-multipart</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-validator</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jca</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jdr</artifactId></dependency> <!-- unstable -->
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jgroups</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jmx</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jpa</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jsf</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>logging</artifactId></dependency>
@@ -66,6 +78,7 @@
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>naming</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>remoting</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>resource-adapters</artifactId></dependency>
+        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>request-controller</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>security</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>transactions</artifactId></dependency>
         <dependency><groupId>org.wildfly.swarm</groupId><artifactId>undertow</artifactId></dependency>
