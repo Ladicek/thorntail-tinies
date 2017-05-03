@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: ${project.artifactId}
+spec:
+  template:
+    spec:
+      containers:
+      - readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+            scheme: HTTP
+        livenessProbe:
+          initialDelaySeconds: 10
+          httpGet:
+            path: /live
+            port: 8080
+            scheme: HTTP
