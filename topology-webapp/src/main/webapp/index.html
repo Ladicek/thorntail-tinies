@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Topology Test</title>
+</head>
+<body>
+    <ul id="current-topology"></ul>
+
+    <script src="/topology/topology.js"></script>
+    <script>
+        var topo = topology();
+        topo.onTopologyChange(function (newTopology) {
+            document.querySelector("#current-topology").innerText = JSON.stringify(newTopology);
+        });
+    </script>
+</body>
+</html>
