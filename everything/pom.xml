@@ -16,26 +16,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <version.org.wildfly.swarm>2017.8.1</version.org.wildfly.swarm>
+        <version.io.thorntail>2.3.0.Final</version.io.thorntail>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.wildfly.swarm</groupId>
-                <artifactId>bom-all</artifactId>
-                <version>${version.org.wildfly.swarm}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <!--
       - MISSING:
       - ~~~~~~~~
       -
+      - core-management
       - deployment-scanner
+      - discovery
       - iiop-openjdk
       - jsr77
       - pojo
@@ -45,44 +35,50 @@
       -->
 
     <dependencies>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>msc</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>management</artifactId></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>batch-jberet</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>bean-validation</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>cdi</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>connector</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>datasources</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>ee</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>ee-security</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>ejb</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>ejb-remote</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>elytron</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>hibernate-validator</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>io</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>infinispan</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jaxrs</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jaxrs-jaxb</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jaxrs-jsonb</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jaxrs-jsonp</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jaxrs-multipart</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jaxrs-validator</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jca</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jdr</artifactId><version>${version.io.thorntail}</version></dependency>
+        <!--<dependency><groupId>io.thorntail</groupId><artifactId>jgroups</artifactId><version>${version.io.thorntail}</version></dependency>-->
+        <dependency><groupId>io.thorntail</groupId><artifactId>jmx</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jpa</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jsf</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jsonb</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>jsonp</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>logging</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>mail</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>management</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>messaging</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>msc</artifactId><version>${version.io.thorntail}</version></dependency>
+        <!--<dependency><groupId>io.thorntail</groupId><artifactId>mod_cluster</artifactId><version>${version.io.thorntail}</version></dependency>-->
+        <dependency><groupId>io.thorntail</groupId><artifactId>naming</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>remoting</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>resource-adapters</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>request-controller</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>scanner</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>security</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>transactions</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>undertow</artifactId><version>${version.io.thorntail}</version></dependency>
+        <dependency><groupId>io.thorntail</groupId><artifactId>webservices</artifactId><version>${version.io.thorntail}</version></dependency>
 
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>batch-jberet</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>bean-validation</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>cdi</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>connector</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>datasources</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>ee</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>ejb</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>ejb-remote</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>hibernate-search</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>hibernate-validator</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>infinispan</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>io</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-jaxb</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-jsonp</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-multipart</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jaxrs-validator</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jca</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jdr</artifactId></dependency> <!-- unstable -->
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jgroups</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jmx</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jpa</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>jsf</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>logging</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>mail</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>messaging</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>mod_cluster</artifactId></dependency> <!-- unstable -->
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>naming</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>remoting</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>resource-adapters</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>request-controller</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>security</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>transactions</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>undertow</artifactId></dependency>
-        <dependency><groupId>org.wildfly.swarm</groupId><artifactId>webservices</artifactId></dependency>
+        <dependency><groupId>com.h2database</groupId><artifactId>h2</artifactId><version>1.4.197</version></dependency>
     </dependencies>
 
     <build>
@@ -90,9 +86,9 @@
 
         <plugins>
             <plugin>
-                <groupId>org.wildfly.swarm</groupId>
-                <artifactId>wildfly-swarm-plugin</artifactId>
-                <version>${version.org.wildfly.swarm}</version>
+                <groupId>io.thorntail</groupId>
+                <artifactId>thorntail-maven-plugin</artifactId>
+                <version>${version.io.thorntail}</version>
                 <executions>
                     <execution>
                         <goals>
