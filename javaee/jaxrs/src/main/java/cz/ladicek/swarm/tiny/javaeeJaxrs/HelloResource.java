@@ -7,7 +7,7 @@ import javax.ws.rs.core.Response;
 @Path("/")
 public class HelloResource {
     @GET
-    public Response get() {
-        return Response.ok().entity("Hello from JAX-RS").build();
+    public String get() {
+        return "Hello from JAX-RS";
     }
 }
