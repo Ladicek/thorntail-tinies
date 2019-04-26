@@ -5,6 +5,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
 @Path("/")
+@javax.inject.Singleton
 public class HelloResource {
     @GET
     public String get() {
