@@ -1,0 +1,9 @@
+# this doesn't work (but can be fixed easily)
+# I only add it here because this is how I'd expect configuration to look like
+# if this worked, the standalone.xml file wouldn't be needed
+thorntail:
+  deployment-scanner:
+    scanners:
+      my-deployment-scanner:
+        scan-interval: 1000
+        path: ${project.build.directory}/scan
